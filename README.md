@@ -1,8 +1,8 @@
-## Movie_Recommendation_System
+## Movie Recommendation System - Java Programming: A DIY Version of Netflix and Amazon Recommendation Engines
 
 Repository for the capstone project - "Java Programming and Software Engineering Fundamentals" program by Duke University on Coursera - Java Programming Build a Recommendation System.
 
-# Programming Exercise: Step Four
+# Programming Exercise: 
 
 In this exercise you will continue to build on the program you wrote for the previous assignment.
 You will continue to make your program more efficient with a RaterDatabase class that is
@@ -42,13 +42,8 @@ that has this ID.
 ● A method getRatersthat has no parameters. This method returns an ArrayList of Raters
 from the database.
 
-Java Programming: A DIY Version of Netflix and Amazon Recommendation Engines
-
 ● A method sizethat has no parameters. This method returns the number of raters in the
 database.
-
-Java Programming: A DIY Version of Netflix and Amazon Recommendation Engines
-Assignment
 
 Specifically for this assignment you will do the following:
 
@@ -87,7 +82,6 @@ named id—this method computes a similarity rating for each rater in the
 RaterDatabase (except the rater with the ID given by the parameter) to see how
 similar they are to the Rater whose ID is the parameter to getSimilarities. This
 method returns an ArrayList of type Rating sorted by ratings from highest to
-Java Programming: A DIY Version of Netflix and Amazon Recommendation Engines
 lowest rating with the highest rating first and only including those raters who have
 a positive similarity rating since those with negative values are not similar in any
 way. Note that in each Rating object the item field is a rater’s ID, and the value
@@ -108,6 +102,7 @@ you have written previously. In particular this method should:
 ■ For every rater, get their similarity rating to the given parameter rater id.
 Include only those raters with positive similarity ratings—those that are
 more similar to rater id. Which method could you call?
+
 ■ For each movie, calculate a weighted average movie rating based on:
 ● Use only the top (largest) numSimilarRatersraters.
 ● For each of these raters, multiply their similarity rating by the
@@ -120,13 +115,14 @@ total number of such ratings.
 
 ■ This method returns an ArrayList of Ratings for movies and their
 calculated weighted ratings, in sorted order.
+
 ○ Write the public method getSimilarRatingsByFilter,which is similar to the
 getSimilarRatingsmethod but has one additional Filter parameter named
 filterCriteriaand uses that filter to access and rate only those movies that match
 the filter criteria.
 
-Java Programming: A DIY Version of Netflix and Amazon Recommendation Engines
 ● Add the following methods to the MovieRunnerSimilarRatings class.
+
 ○ Write a void method printSimilarRatingsthat has no parameters. This method
 creates a new FourthRatings object, reads data into the MovieDatabase and
 RaterDatabase, and then calls getSimilarRatingsfor a particular rater ID, a
@@ -136,6 +132,7 @@ ratings. For example, using the files ratedmoviesfull.csv and ratings.csvand
 the rater ID 65, the number of minimal raters 5, and the number of top similar
 raters set to 20, the movie returned with the top rated average is “The Fault in
 Our Stars”.
+
 ○ Write a void method printSimilarRatingsByGenrethat has no parameters. This
 method is similar to printSimilarRatingsbut also uses a genre filter and then
 lists recommended movies and their similarity ratings, and for each movie prints
@@ -161,7 +158,6 @@ filter and a minutes filter and then lists recommended movies and their similari
 ratings, and for each movie prints the movie, its minutes, and its similarity rating
 on one line and its genres on a separate line below it. For example, using the
 files ratedmoviesfull.csvand ratings.csv, the genre “Adventure”, minutes
-Java Programming: A DIY Version of Netflix and Amazon Recommendation Engines
 between 100 and 200 inclusive, the rater ID 65, the number of minimal raters set
 to 5, and the number of top similar raters set to 10, the movie returned with the
 top rated average is “Interstellar”.
