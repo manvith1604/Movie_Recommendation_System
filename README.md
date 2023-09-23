@@ -1,8 +1,8 @@
-## Movie Recommendation System - Java Programming: A DIY Version of Netflix and Amazon Recommendation Engines
+# Movie Recommendation System - Java Programming: A DIY Version of Netflix and Amazon Recommendation Engines
 
 Repository for the capstone project - "Java Programming and Software Engineering Fundamentals" program by Duke University on Coursera - Java Programming Build a Recommendation System.
 
-# Programming Exercise: 
+## Programming Exercise: 
 
 In this exercise you will continue to build on the program you wrote for the previous assignment.
 You will continue to make your program more efficient with a RaterDatabase class that is
@@ -14,7 +14,7 @@ movies. To calculate these weighted averages you will need to calculate similari
 each rater to find out which raters you are more similar to than others, so you can weight ratings
 accordingly.
 
-# Additional File for Assignment
+## Additional File for Assignment
 For this assignment you will be given one class RaterDatabase,which is an efficient way to get
 information about raters. This class contains:
 
