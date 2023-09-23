@@ -104,10 +104,13 @@ Include only those raters with positive similarity ratings—those that are
 more similar to rater id. Which method could you call?
 
 ■ For each movie, calculate a weighted average movie rating based on:
+
 ● Use only the top (largest) numSimilarRatersraters.
+
 ● For each of these raters, multiply their similarity rating by the
 rating they gave that movie. This will emphasize those raters who
 are closer to the rater id, since they have greater weights.
+
 ● The weighted average movie rating for a particular movie is the
 sum of these weighted average ratings (for each rater multiply
 their similarity rating by their rating for the movie), divided by the
